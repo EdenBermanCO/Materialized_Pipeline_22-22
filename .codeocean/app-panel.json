@@ -1,0 +1,15 @@
+{
+	"version": 1,
+	"datasets": [
+		{
+			"id": "8f026f23-03ca-4e1e-8260-f463f94220f7",
+			"name": "Internal",
+			"description": "Desc",
+			"help_text": "Help"
+		}
+	],
+	"processes": [
+		"capsule_fast_qc_1",
+		"capsule_multi_qc_2"
+	]
+}

@@ -1,0 +1,56 @@
+{
+	"version": 1,
+	"processes": [
+		{
+			"name": "capsule_fast_qc_1",
+			"capsule": {
+				"id": "ea2b4c83-912e-4479-8f23-81a85bad768a",
+				"name": "FastQC",
+				"slug": "5932041",
+				"version": 1,
+				"public": true,
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "W1XBkiLWjKA2Styx",
+					"source_id": "8f026f23-03ca-4e1e-8260-f463f94220f7",
+					"type": "dataset",
+					"name": "Reads",
+					"source_path": "Reads/"
+				}
+			]
+		},
+		{
+			"name": "capsule_multi_qc_2",
+			"capsule": {
+				"id": "c039dc32-bdfe-4ac9-8432-d82c12437ac0",
+				"name": "MultiQC",
+				"slug": "6215221",
+				"version": 1,
+				"public": true,
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "DYBjXlq6ImImkZZe",
+					"source_id": "capsule_fast_qc_1",
+					"type": "capsule",
+					"name": "FastQC",
+					"collect": true
+				}
+			],
+			"results": {
+				"id": "c039dc32-bdfe-4ac9-8432-d82c12437ac0"
+			}
+		}
+	]
+}

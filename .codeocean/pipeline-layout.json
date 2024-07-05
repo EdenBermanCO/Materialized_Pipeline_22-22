@@ -1,0 +1,77 @@
+{
+	"edges": [
+		{
+			"id": "reactflow__edge-capsule_multi_qc_2-results",
+			"source": "capsule_multi_qc_2",
+			"source_handle": null,
+			"target": "results",
+			"target_handle": null
+		},
+		{
+			"id": "reactflow__edge-capsule_fast_qc_1-capsule_multi_qc_2",
+			"selected": false,
+			"source": "capsule_fast_qc_1",
+			"source_handle": null,
+			"target": "capsule_multi_qc_2",
+			"target_handle": null
+		},
+		{
+			"id": "reactflow__edge-8f026f23-03ca-4e1e-8260-f463f94220f7-capsule_fast_qc_1",
+			"selected": true,
+			"source": "8f026f23-03ca-4e1e-8260-f463f94220f7",
+			"source_handle": null,
+			"target": "capsule_fast_qc_1",
+			"target_handle": null
+		}
+	],
+	"nodes": [
+		{
+			"data": {
+				"capsule_id": "ea2b4c83-912e-4479-8f23-81a85bad768a"
+			},
+			"id": "capsule_fast_qc_1",
+			"position": {
+				"x": 937.864566471118,
+				"y": 523.2306223307928
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"id": "results",
+			"position": {
+				"x": 986.3526294509974,
+				"y": 1037.0855372349033
+			},
+			"selected": false,
+			"type": "results"
+		},
+		{
+			"data": {
+				"capsule_id": "c039dc32-bdfe-4ac9-8432-d82c12437ac0"
+			},
+			"id": "capsule_multi_qc_2",
+			"position": {
+				"x": 1004.3877864716683,
+				"y": 777.4971521106747
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"id": "8f026f23-03ca-4e1e-8260-f463f94220f7",
+			"position": {
+				"x": 1032.4753682496785,
+				"y": 344.35707521820143
+			},
+			"selected": false,
+			"type": "dataset"
+		}
+	],
+	"timestamp": 1720191718722,
+	"viewport": {
+		"x": -517.2236900878758,
+		"y": -177.54224607865393,
+		"zoom": 0.6764555293569312
+	}
+}
